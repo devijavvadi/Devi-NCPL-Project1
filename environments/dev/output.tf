@@ -25,3 +25,11 @@ output "public_subnet_ids" {
 output "private_subnet_ids" {
   value = module.vpc.private_subnet_ids
 }
+
+output "iam_role_name" {
+  value = module.iam.role_name
+}
+
+output "iam_role_arn" {
+  value = module.iam.role_arn
+}
