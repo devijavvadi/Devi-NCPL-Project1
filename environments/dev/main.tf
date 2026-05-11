@@ -27,3 +27,10 @@ module "s3" {
   lifecycle_days     = var.lifecycle_days
 }
 
+
+module "iam" {
+  source = "../../modules/iam"
+
+  project     = var.project
+  environment = var.environment
+}
